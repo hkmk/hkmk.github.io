@@ -1,11 +1,11 @@
 <html>
-  <head>
-	  <title>Hirotaka KAMEKO</title>
+	<head>
+		<title>Hirotaka KAMEKO</title>
 	  
 	  <script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	  <script type="text/javascript">
-      $(function() {
+		  $(function() {
 		    $("#Fontselector").on("change",function() {
 		      var font = $("#Fontselector option:selected").text();
 		      console.log(font);
@@ -24,21 +24,21 @@
 			  $("#searchbar").trigger('change');
 		  }
 		  function resetOtherFilters(changedId) {
-      $("select").each(function() {
-        if ($(this).attr("id") !== changedId) {
-          $(this).val("");
-        }
-      });
-      $("#searchbar").val("");
-    }
+      	$("select").each(function() {
+        	if ($(this).attr("id") !== changedId) {
+          	$(this).val("");
+        	}
+      	});
+      	$("#searchbar").val("");
+    	}
 
-    $("#authorselectfirst, #authorselect").on("change", function() {
-      resetOtherFilters($(this).attr("id"));
-      $(this).trigger('change');
-    });
-  </script>
-  </head>
-  <body>
+    	$("#authorselectfirst, #authorselect").on("change", function() {
+      	resetOtherFilters($(this).attr("id"));
+      	$(this).trigger('change');
+    	});
+		</script>
+	</head>
+	<body>
     <h1>Hirotaka KAMEKO (亀甲 博貴)</h1>
 
     <bibtex src="https://raw.githubusercontent.com/hkmk/hkmk.github.io/main/hirotaka.kameko.bib"></bibtex>
