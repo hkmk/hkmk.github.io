@@ -1,3 +1,140 @@
+@comment{article:Journal Articles,
+  required: author, title, journal, year
+  optional: volume, number, pages, month, note, key
+}
+
+@article{nishimura2024recipe,
+  author = {Nishimura, Taichi and Hashimoto, Atsushi and Ushiku, Yoshitaka and Kameko, Hirotaka and Mori, Shinsuke},
+  title = {Recipe Generation from Unsegmented Cooking Videos},
+  year = {2024},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  issn = {1551-6857},
+  url = {https://doi.org/10.1145/3649137},
+  doi = {10.1145/3649137},
+  abstract = {This paper tackles recipe generation from unsegmented cooking videos, a task that requires agents to (1) extract key events in completing the dish and (2) generate sentences for the extracted events. Our task is similar to dense video captioning (DVC), which aims at detecting events thoroughly and generating sentences for them. However, unlike DVC, in recipe generation, recipe story awareness is crucial, and a model should extract an appropriate number of events in the correct order and generate accurate sentences based on them. We analyze the output of the DVC model and confirm that although (1) several events are adoptable as a recipe story, (2) the generated sentences for such events are not grounded in the visual content. Based on this, we set our goal to obtain correct recipes by selecting oracle events from the output events and re-generating sentences for them. To achieve this, we propose a transformer-based multimodal recurrent approach of training an event selector and sentence generator for selecting oracle events from the DVC’s events and generating sentences for them. In addition, we extend the model by including ingredients to generate more accurate recipes. The experimental results show that the proposed method outperforms state-of-the-art DVC models. We also confirm that, by modeling the recipe in a story-aware manner, the proposed model outputs the appropriate number of events in the correct order.},
+  note = {Just Accepted},
+  journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
+  month = {feb},
+  keywords = {cooking recipe, video understanding}
+}
+
+@article{shirai2023visual,
+  title={調理動作後の物体の視覚的状態予測を目指した Visual Recipe Flow データセットの構築と評価},
+  author={白井 圭佑 and 橋本 敦史 and 西村 太一 and 亀甲 博貴 and 栗田 修平 and 森 信介},
+  journal={自然言語処理},
+  volume={30},
+  number={3},
+  pages={1042-1060},
+  year={2023},
+  doi={10.5715/jnlp.30.1042}
+}
+
+@article{kameko2023japanese,
+  author={Kameko, Hirotaka and Murawaki, Yugo and Matsuyoshi, Suguru and Mori, Shinsuke},
+  journal={IEEE Access}, 
+  title={Japanese Event Factuality Analysis in the Era of BERT}, 
+  year={2023},
+  volume={11},
+  number={},
+  pages={93286-93292},
+  keywords={Task analysis;Multitasking;Tagging;Annotations;Training data;Online services;Neural networks;Event detection;Labeling;Sequential analysis;Event factuality;modality;sequence labeling;neural networks;multi-task learning},
+  doi={10.1109/ACCESS.2023.3308916}
+}
+
+@article{nishimura2023state,
+  author={Nishimura, Taichi and Hashimoto, Atsushi and Ushiku, Yoshitaka and Kameko, Hirotaka and Mori, Shinsuke},
+  title={State-aware Video Procedural Captioning},
+  journal={Multimedia Tools and Applications},
+  year={2023},
+  volume={82},
+  pages={37273--37301},
+  month={march},
+}
+
+@article{nishimura2022biovl2,
+  title={BioVL2データセット：生化学分野における一人称視点の実験映像への言語アノテーション},
+  author={西村 太一 and 迫田 航次郎 and 牛久 敦 and 橋本 敦史 and 奥田 奈津子 and 小野 富三人 and 亀甲 博貴 and 森 信介},
+  journal={自然言語処理},
+  volume={29},
+  number={4},
+  pages={1106-1137},
+  year={2022},
+  doi={10.5715/jnlp.29.1106}
+}
+
+@article{kameko2021japanese,
+  title={将棋解説文への固有表現・モダリティ情報アノテーション},
+  author={亀甲 博貴 and 松吉 俊 and John Richardson and 牛久 敦 and 笹田 鉄郎 and 村脇 有吾 and 鶴岡 慶雅 and 森 信介},
+  journal={自然言語処理},
+  volume={28},
+  number={3},
+  pages={847-873},
+  year={2021},
+  doi={10.5715/jnlp.28.847}
+}
+
+@article{nishimura2021structure,
+  author={Nishimura, Taichi and Hashimoto, Atsushi and Ushiku, Yoshitaka and Kameko, Hirotaka and Yamakata, Yoko and Mori, Shinsuke},
+  journal={IEEE Access}, 
+  title={Structure-Aware Procedural Text Generation From an Image Sequence}, 
+  year={2021},
+  volume={9},
+  number={},
+  pages={2125-2141},
+  keywords={Image sequences;Merging;Videos;Task analysis;Visualization;Oils;Annotations;Natural language processing;text generation;procedural text;vision and language},
+  doi={10.1109/ACCESS.2020.3043452}
+}
+
+@article{mizukami2019deep,
+   author	 = "水上 直紀 and 鈴木 潤 and 亀甲 博貴 and 鶴岡 慶雅",
+   title	 = "報酬が疎な環境に適した深層強化学習法",
+   journal	 = "情報処理学会論文誌",
+   year 	 = "2019",
+   volume	 = "60",
+   number	 = "3",
+   pages	 = "956--966",
+   month	 = "mar"
+}
+
+@article{kameko2017predicting,
+   author	 = "亀甲 博貴 and 森 信介 and 鶴岡 慶雅",
+   title	 = "将棋解説文生成のための解説すべき手順の予測",
+   journal	 = "情報処理学会論文誌",
+   year 	 = "2017",
+   volume	 = "58",
+   number	 = "12",
+   pages	 = "2070--2079",
+   month	 = "dec"
+}
+
+@article{tomori2017improvement,
+  title={シンボルグラウンディングによる分野特有の単語分割の精度向上},
+  author={友利 涼 and 亀甲 博貴 and 二宮 崇 and 森 信介 and 鶴岡 慶雅},
+  journal={自然言語処理},
+  volume={24},
+  number={3},
+  pages={447-461},
+  year={2017},
+  doi={10.5715/jnlp.24.447}
+}
+
+@article{kameko2014automatic,
+   author	 = "亀甲 博貴 and 三輪 誠 and 鶴岡 慶雅 and 森 信介 and 近山 隆",
+   title	 = "対数線形言語モデルを用いた将棋解説文の自動生成",
+   journal	 = "情報処理学会論文誌",
+   year 	 = "2014",
+   volume	 = "55",
+   number	 = "11",
+   pages	 = "2431--2440",
+   month	 = "nov"
+}
+
+@comment{inproceedings:International Conferences
+  required: author, title, booktitle, year
+  optional: editor, pages, organization, publisher, address, month, note, key
+}
+
 @inproceedings{ohno2024automatic,
     title = "Automatic Construction of a Large-Scale Corpus for Geoparsing Using {W}ikipedia Hyperlinks",
     author = "Ohno, Keyaki  and
@@ -21,13 +158,15 @@
     abstract = "Geoparsing is the task of estimating the latitude and longitude (coordinates) of location expressions in texts. Geoparsing must deal with the ambiguity of the expressions that indicate multiple locations with the same notation. For evaluating geoparsing systems, several corpora have been proposed in previous work. However, these corpora are small-scale and suffer from the coverage of location expressions on general domains. In this paper, we propose Wikipedia Hyperlink-based Location Linking (WHLL), a novel method to construct a large-scale corpus for geoparsing from Wikipedia articles. WHLL leverages hyperlinks in Wikipedia to annotate multiple location expressions with coordinates. With this method, we constructed the WHLL corpus, a new large-scale corpus for geoparsing. The WHLL corpus consists of 1.3M articles, each containing about 7.8 unique location expressions. 45.6{\%} of location expressions are ambiguous and refer to more than one location with the same notation. In each article, location expressions of the article title and those hyperlinks to other articles are assigned with coordinates. By utilizing hyperlinks, we can accurately assign location expressions with coordinates even with ambiguous location expressions in the texts. Experimental results show that there remains room for improvement by disambiguating location expressions.",
 }
 
-@article{shirai2023visual,
-  title={調理動作後の物体の視覚的状態予測を目指した Visual Recipe Flow データセットの構築と評価},
-  author={白井 圭佑 and 橋本 敦史 and 西村 太一 and 亀甲 博貴 and 栗田 修平 and 森 信介},
-  journal={自然言語処理},
-  volume={30},
-  number={3},
-  pages={1042-1060},
-  year={2023},
-  doi={10.5715/jnlp.30.1042}
+@comment{misc:Misc.
+  required:
+  optional: author, title, howpublished, month, year, note, key
+}
+
+@misc{kajimura2024multimodal,
+  author={梶村 恵矢 and 西村 太一 and 羽路 悠斗 and 山本 航輝 and 崔 泰毓 and 亀甲 博貴 and 森 信介},
+  title={一人称視点映像を用いたマルチモーダル作業支援システム},
+  howpublished={言語処理学会第30回年次大会 (NLP 2024)},
+  month={march},
+  year={2024},
 }
