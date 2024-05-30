@@ -73,33 +73,36 @@
     <div class="bibtex_topics"></div>
 
     <div class="bibtex_structure">
-      <div class="sections bibtextypekey">
+      	<div class="sections bibtextypekey">
 
-		<ol>
 			<div class="section article">
-          		<h3>Journal Articles</h3>
-          		<div class="sort year" extra="DESC number">
-            		<div class="templates"></div>
-          		</div>
+         		<h3>Journal Articles</h3>
+				<ol>
+          			<div class="sort year" extra="DESC number">
+            			<div class="templates"></div>
+          			</div>
+				</ol>
         	</div>
     
 			<div class="section inproceedings">
           		<h3>International Conference</h3>
-          		<div class="sort year" extra="DESC number">
-            		<div class="templates"></div>
-          		</div>
+				<ol>
+          			<div class="sort year" extra="DESC number">
+            			<div class="templates"></div>
+          			</div>
+				</ol>
         	</div>
 
         	<div class="section misc">
 				<h3>Misc (Domestic Conf/WS, etc.)</h3>
-				<div class="sort year" extra="DESC number">
-			  		<div class="templates"></div>
-				</div>
+				<ol>
+					<div class="sort year" extra="DESC number">
+				  		<div class="templates"></div>
+					</div>
+				</ol>
 			</div>
 
-		</ol>
-  
-      </div>
+      	</div>
     </div>
 
     <div id="bibtex_display">
@@ -122,13 +125,13 @@
         		<span class="if pages">pp. <span class="pages"></span>, </span>
         		<span class="if month"><span class="month"></span>, </span>
         		<span class="year"></span>.
+				<span class="if memo"><span class="memo"></span></span>
 				[<a class="bibtexVar" role="button" data-bs-toggle="collapse" href="#bib+BIBTEXKEY+" aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape>bib</a>]
 				<div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape>
 					<div class="well">
 						<pre><span class="bibtexraw noread"></span></pre>
 					</div>
 				</div>
-				<span class="if note"><span class="note"></span></span>
 			</p></li>
      	</div>
     </div>
