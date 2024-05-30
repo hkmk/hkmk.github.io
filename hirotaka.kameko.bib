@@ -56,7 +56,7 @@
   pages={1106-1137},
   year={2022},
   doi={10.5715/jnlp.29.1106},
-  memo={(論文賞)}
+  memo={論文賞受賞}
 }
 
 @article{kameko2021japanese,
@@ -126,6 +126,14 @@
    month	 = nov,
 }
 
+@inproceedings{nakata2024texylon,
+  author={Nakata, Masato and Morita, Kosuke and Kameko, Hirotaka and Mori, Shinsuke},
+  title={Texylon: Dataset of Log-to-Description and Description-to-Log Generation for Text Analytics Tools},
+  booktitle={the 8th International Workshop on SCIentific DOCument Analysis (SCIDOCA 2024)},
+  month=may,
+  year={2024},
+}
+
 @inproceedings{ohno2024automatic,
     title = "Automatic Construction of a Large-Scale Corpus for Geoparsing Using {W}ikipedia Hyperlinks",
     author = "Ohno, Keyaki  and
@@ -147,6 +155,327 @@
     url = "https://aclanthology.org/2024.lrec-main.168",
     pages = "1883--1888",
     abstract = "Geoparsing is the task of estimating the latitude and longitude (coordinates) of location expressions in texts. Geoparsing must deal with the ambiguity of the expressions that indicate multiple locations with the same notation. For evaluating geoparsing systems, several corpora have been proposed in previous work. However, these corpora are small-scale and suffer from the coverage of location expressions on general domains. In this paper, we propose Wikipedia Hyperlink-based Location Linking (WHLL), a novel method to construct a large-scale corpus for geoparsing from Wikipedia articles. WHLL leverages hyperlinks in Wikipedia to annotate multiple location expressions with coordinates. With this method, we constructed the WHLL corpus, a new large-scale corpus for geoparsing. The WHLL corpus consists of 1.3M articles, each containing about 7.8 unique location expressions. 45.6{\%} of location expressions are ambiguous and refer to more than one location with the same notation. In each article, location expressions of the article title and those hyperlinks to other articles are assigned with coordinates. By utilizing hyperlinks, we can accurately assign location expressions with coordinates even with ambiguous location expressions in the texts. Experimental results show that there remains room for improvement by disambiguating location expressions.",
+}
+
+@inproceedings{shirai2023towards,
+    title = "Towards Flow Graph Prediction of Open-Domain Procedural Texts",
+    author = "Shirai, Keisuke  and
+      Kameko, Hirotaka  and
+      Mori, Shinsuke",
+    editor = "Can, Burcu  and
+      Mozes, Maximilian  and
+      Cahyawijaya, Samuel  and
+      Saphra, Naomi  and
+      Kassner, Nora  and
+      Ravfogel, Shauli  and
+      Ravichander, Abhilasha  and
+      Zhao, Chen  and
+      Augenstein, Isabelle  and
+      Rogers, Anna  and
+      Cho, Kyunghyun  and
+      Grefenstette, Edward  and
+      Voita, Lena",
+    booktitle = "Proceedings of the 8th Workshop on Representation Learning for NLP (RepL4NLP 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.repl4nlp-1.8",
+    doi = "10.18653/v1/2023.repl4nlp-1.8",
+    pages = "87--96",
+    abstract = "Machine comprehension of procedural texts is essential for reasoning about the steps and automating the procedures. However, this requires identifying entities within a text and resolving the relationships between the entities. Previous work focused on the cooking domain and proposed a framework to convert a recipe text into a flow graph (FG) representation. In this work, we propose a framework based on the recipe FG for flow graph prediction of open-domain procedural texts. To investigate flow graph prediction performance in non-cooking domains, we introduce the wikiHow-FG corpus from articles on wikiHow, a website of how-to instruction articles. In experiments, we consider using the existing recipe corpus and performing domain adaptation from the cooking to the target domain. Experimental results show that the domain adaptation models achieve higher performance than those trained only on the cooking or target domain data.",
+}
+
+@inproceedings{shirai2022visual,
+    title = "Visual Recipe Flow: A Dataset for Learning Visual State Changes of Objects with Recipe Flows",
+    author = "Shirai, Keisuke  and
+      Hashimoto, Atsushi  and
+      Nishimura, Taichi  and
+      Kameko, Hirotaka  and
+      Kurita, Shuhei  and
+      Ushiku, Yoshitaka  and
+      Mori, Shinsuke",
+    editor = "Calzolari, Nicoletta  and
+      Huang, Chu-Ren  and
+      Kim, Hansaem  and
+      Pustejovsky, James  and
+      Wanner, Leo  and
+      Choi, Key-Sun  and
+      Ryu, Pum-Mo  and
+      Chen, Hsin-Hsi  and
+      Donatelli, Lucia  and
+      Ji, Heng  and
+      Kurohashi, Sadao  and
+      Paggio, Patrizia  and
+      Xue, Nianwen  and
+      Kim, Seokhwan  and
+      Hahm, Younggyun  and
+      He, Zhong  and
+      Lee, Tony Kyungil  and
+      Santus, Enrico  and
+      Bond, Francis  and
+      Na, Seung-Hoon",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.315",
+    pages = "3570--3577",
+    abstract = "We present a new multimodal dataset called Visual Recipe Flow, which enables us to learn a cooking action result for each object in a recipe text. The dataset consists of object state changes and the workflow of the recipe text. The state change is represented as an image pair, while the workflow is represented as a recipe flow graph. We developed a web interface to reduce human annotation costs. The dataset allows us to try various applications, including multimodal information retrieval.",
+}
+
+@inproceedings{tanaka2022image,
+    title = "Image Description Dataset for Language Learners",
+    author = "Tanaka, Kento  and
+      Nishimura, Taichi  and
+      Nanjo, Hiroaki  and
+      Shirai, Keisuke  and
+      Kameko, Hirotaka  and
+      Dantsuji, Masatake",
+    editor = "Calzolari, Nicoletta  and
+      B{\'e}chet, Fr{\'e}d{\'e}ric  and
+      Blache, Philippe  and
+      Choukri, Khalid  and
+      Cieri, Christopher  and
+      Declerck, Thierry  and
+      Goggi, Sara  and
+      Isahara, Hitoshi  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Mazo, H{\'e}l{\`e}ne  and
+      Odijk, Jan  and
+      Piperidis, Stelios",
+    booktitle = "Proceedings of the Thirteenth Language Resources and Evaluation Conference",
+    month = jun,
+    year = "2022",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2022.lrec-1.735",
+    pages = "6814--6821",
+    abstract = "We focus on image description and a corresponding assessment system for language learners. To achieve automatic assessment of image description, we construct a novel dataset, the Language Learner Image Description (LLID) dataset, which consists of images, their descriptions, and assessment annotations. Then, we propose a novel task of automatic error correction for image description, and we develop a baseline model that encodes multimodal information from a learner sentence with an image and accurately decodes a corrected sentence. Our experimental results show that the developed model can revise errors that cannot be revised without an image.",
+}
+
+@inproceedings{sung2021inference,
+  author={Sung, Junehwan and Mori, Shinsuke and Kameko, Hirotaka and Kubo, Akira and Sekino, Tatsuki},
+  booktitle={2021 IEEE International Conference on Big Data (Big Data)}, 
+  title={Inference of Absolute Time Value from Temporal Expressions}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={2273-2280},
+  keywords={Training;Text recognition;Conferences;Natural languages;Manuals;Big Data;Inference algorithms;temporal expression;absolute time value;named entity recognition},
+  doi={10.1109/BigData52589.2021.9671863}
+}
+
+@inproceedings{nishimura2021state,
+  author = {Nishimura, Taichi and Hashimoto, Atsushi and Ushiku, Yoshitaka and Kameko, Hirotaka and Mori, Shinsuke},
+  title = {State-aware Video Procedural Captioning},
+  year = {2021},
+  isbn = {9781450386517},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3474085.3475322},
+  doi = {10.1145/3474085.3475322},
+  abstract = {Video procedural captioning (VPC), which generates procedural text from instructional videos, is an essential task for scene understanding and real-world applications. The main challenge of VPC is to describe how to manipulate materials accurately. This paper focuses on this challenge by designing a new VPC task, generating a procedural text from the clip sequence of an instructional video and material list. In this task, the state of materials is sequentially changed by manipulations, yielding their state-aware visual representations (e.g., eggs are transformed into cracked, stirred, then fried forms). The essential difficulty is to convert such visual representations into textual representations; that is, a model should track the material states after manipulations to better associate the cross-modal relations. To achieve this, we propose a novel VPC method, which modifies an existing textual simulator for tracking material states as a visual simulator and incorporates it into a video captioning model. Our experimental results show the effectiveness of the proposed method, which outperforms state-of-the-art video captioning models. We further analyze the learned embedding of materials to demonstrate that the simulators capture their state transition. The code and dataset are available from https://github.com/misogil0116/svpc},
+  booktitle = {Proceedings of the 29th ACM International Conference on Multimedia},
+  pages = {1766-1774},
+  numpages = {9},
+  keywords = {simulator, procedural text, instructional video},
+  location = {Virtual Event, China},
+  series = {MM '21}
+}
+
+@inproceedings{nishimura2021egocentric,
+    author    = {Nishimura, Taichi and Sakoda, Kojiro and Hashimoto, Atsushi and Ushiku, Yoshitaka and Tanaka, Natsuko and Ono, Fumihito and Kameko, Hirotaka and Mori, Shinsuke},
+    title     = {Egocentric Biochemical Video-and-Language Dataset},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+    month     = {October},
+    year      = {2021},
+    pages     = {3129-3133}
+}
+
+@inproceedings{hara2021development,
+  author={Hara, Shoichiro and Kubo, Akira and Matsuzaki, Masato and Kameko, Hirotaka and Mori, Shinsuke},
+  booktitle={2021 Pacific Neighborhood Consortium Annual Conference and Joint Meetings (PNC)}, 
+  title={Development of Methods to Extract Place Names and Estimate Their Places from Web Newspaper Articles}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Social sciences;Meetings;Focusing;Media;Big Data;Internet;Data mining;area studies;big data;machine learning;Named Entity Recognition;Geocoding;LDA;KyTea;BiLSTM-CRF},
+  doi={10.23919/PNC53575.2021.9672311}
+}
+
+@inproceedings{kameko2020annotating,
+    title = "Annotating Event Appearance for {J}apanese Chess Commentary Corpus",
+    author = "Kameko, Hirotaka  and
+      Mori, Shinsuke",
+    editor = "Calzolari, Nicoletta  and
+      B{\'e}chet, Fr{\'e}d{\'e}ric  and
+      Blache, Philippe  and
+      Choukri, Khalid  and
+      Cieri, Christopher  and
+      Declerck, Thierry  and
+      Goggi, Sara  and
+      Isahara, Hitoshi  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Mazo, H{\'e}l{\`e}ne  and
+      Moreno, Asuncion  and
+      Odijk, Jan  and
+      Piperidis, Stelios",
+    booktitle = "Proceedings of the Twelfth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2020.lrec-1.530",
+    pages = "4302--4308",
+    abstract = "In recent years, there has been a surge of interest in natural language processing related to the real world, such as symbol grounding, language generation, and non-linguistic data search by natural language queries. Researchers usually collect pairs of text and non-text data for research. However, the text and non-text data are not always a {``}true{''} pair. We focused on the shogi (Japanese chess) commentaries, which are accompanied by game states as a well-defined {``}real world{''}. For analyzing and processing texts accurately, considering only the given states is insufficient, and we must consider the relationship between texts and the real world. In this paper, we propose {``}Event Appearance{''} labels that show the relationship between events mentioned in texts and those happening in the real world. Our event appearance label set consists of temporal relation, appearance probability, and evidence of the event. Statistics of the annotated corpus and the experimental result show that there exists temporal relation which skillful annotators realize in common. However, it is hard to predict the relationship only by considering the given states.",
+    language = "English",
+    ISBN = "979-10-95546-34-4",
+}
+
+@inproceedings{matsuyoshi2018annotating,
+    title = "Annotating Modality Expressions and Event Factuality for a {J}apanese Chess Commentary Corpus",
+    author = "Matsuyoshi, Suguru  and
+      Kameko, Hirotaka  and
+      Murawaki, Yugo  and
+      Mori, Shinsuke",
+    editor = "Calzolari, Nicoletta  and
+      Choukri, Khalid  and
+      Cieri, Christopher  and
+      Declerck, Thierry  and
+      Goggi, Sara  and
+      Hasida, Koiti  and
+      Isahara, Hitoshi  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Mazo, H{\'e}l{\`e}ne  and
+      Moreno, Asuncion  and
+      Odijk, Jan  and
+      Piperidis, Stelios  and
+      Tokunaga, Takenobu",
+    booktitle = "Proceedings of the Eleventh International Conference on Language Resources and Evaluation ({LREC} 2018)",
+    month = may,
+    year = "2018",
+    address = "Miyazaki, Japan",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/L18-1393",
+}
+
+@inproceedings{kameko2018deep,
+  author="Kameko, Hirotaka
+    and Suzuki, Jun
+    and Mizukami, Naoki
+    and Tsuruoka, Yoshimasa",
+  editor="Cazenave, Tristan
+    and Winands, Mark H.M.
+    and Saffidine, Abdallah",
+  title="Deep Reinforcement Learning with Hidden Layers on Future States",
+  booktitle="Computer Games",
+  year="2018",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="46--60",
+  abstract="Deep reinforcement learning algorithms such as Deep Q-Networks have successfully been used to construct a strong agent for Atari games by only performing direct evaluation of the current state and actions. This is in stark contrast to the algorithms for traditional board games such as Chess or Go, where a look-ahead search mechanism is indispensable to build a strong agent. In this paper, we present a novel deep reinforcement learning architecture that can both effectively and efficiently use information on future states in video games. First, we demonstrate that such information is indeed quite useful in deep reinforcement learning by using exact state transition information obtained from the emulator. We then propose a method that predicts future states using Long Short Term Memory (LSTM), such that the agent can look ahead without the emulator. In this work, we applied our method to the asynchronous advantage actor-critic (A3C) architecture. The experimental results show that our proposed method with predicted future states substantially outperforms the vanilla A3C in several Atari games.",
+  isbn="978-3-319-75931-9"
+}
+
+@inproceedings{mizukami2017exploration,
+  author="Mizukami, Naoki
+    and Suzuki, Jun
+    and Kameko, Hirotaka
+    and Tsuruoka, Yoshimasa",
+  editor="Winands, Mark H.M. 
+    and van den Herik, H. Jaap
+    and Kosters, Walter A.",
+  title="Exploration Bonuses Based on Upper Confidence Bounds for Sparse Reward Games",
+  booktitle="Advances in Computer Games",
+  year="2017",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="165--175",
+  abstract="Recent deep reinforcement learning (RL) algorithms have achieved super-human-level performance in many Atari games. However, a closer look at their performance reveals that the algorithms fall short of humans in games where rewards are only obtained occasionally. One solution to this sparse reward problem is to incorporate an explicit and more sophisticated exploration strategy in the agent's learning process. In this paper, we present an effective exploration strategy that explicitly considers the progress of training using exploration bonuses based on Upper Confidence Bounds (UCB). Our method also includes a mechanism to separate exploration bonuses from rewards, thereby avoiding the problem of interfering with the original learning objective. We evaluate our method on Atari 2600 games with sparse rewards, and achieve significant improvements over the vanilla asynchronous advantage actor-critic (A3C) algorithm.",
+  isbn="978-3-319-71649-7"
+}
+
+@inproceedings{ushiku2017game,
+  author = {Ushiku, Atsushi and Mori, Shinsuke and Kameko, Hirotaka and Tsuruoka, Yoshimasa},
+  title = {Game State Retrieval with Keyword Queries},
+  year = {2017},
+  isbn = {9781450350228},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3077136.3080668},
+  doi = {10.1145/3077136.3080668},
+  abstract = {There are many databases of game records available online. In order to retrieve a game state from such a database, users usually need to specify the target state in a domain-specific language, which may be difficult to learn for novice users. In this work, we propose a search system that allows users to retrieve game states from a game record database by using keywords. In our approach, we first train a neural network model for symbol grounding using a small number of pairs of a game state and a commentary on it. We then apply it to all the states in the database to associate each of them with characteristic terms and their scores. The enhanced database thus enables users to search for a state using keywords. To evaluate the performance of the proposed method, we conducted experiments of game state retrieval using game records of Shogi (Japanese chess) with commentaries. The results demonstrate that our approach gives significantly better results than full-text search and an LSTM language model.},
+  booktitle = {Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages = {877–880},
+  numpages = {4},
+  keywords = {symbol grounding, shogi, search of nonlinguistic data},
+  location = {Shinjuku, Tokyo, Japan},
+  series = {SIGIR '17}
+}
+
+@inproceedings{mori2016japanese,
+    title = "A {J}apanese Chess Commentary Corpus",
+    author = "Mori, Shinsuke  and
+      Richardson, John  and
+      Ushiku, Atsushi  and
+      Sasada, Tetsuro  and
+      Kameko, Hirotaka  and
+      Tsuruoka, Yoshimasa",
+    editor = "Calzolari, Nicoletta  and
+      Choukri, Khalid  and
+      Declerck, Thierry  and
+      Goggi, Sara  and
+      Grobelnik, Marko  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Mazo, Helene  and
+      Moreno, Asuncion  and
+      Odijk, Jan  and
+      Piperidis, Stelios",
+    booktitle = "Proceedings of the Tenth International Conference on Language Resources and Evaluation ({LREC}'16)",
+    month = may,
+    year = "2016",
+    address = "Portoro{\v{z}}, Slovenia",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/L16-1225",
+    pages = "1415--1420",
+    abstract = "In recent years there has been a surge of interest in the natural language prosessing related to the real world, such as symbol grounding, language generation, and nonlinguistic data search by natural language queries. In order to concentrate on language ambiguities, we propose to use a well-defined {``}real world,{''} that is game states. We built a corpus consisting of pairs of sentences and a game state. The game we focus on is shogi (Japanese chess). We collected 742,286 commentary sentences in Japanese. They are spontaneously generated contrary to natural language annotations in many image datasets provided by human workers on Amazon Mechanical Turk. We defined domain specific named entities and we segmented 2,508 sentences into words manually and annotated each word with a named entity tag. We describe a detailed definition of named entities and show some statistics of our game commentary corpus. We also show the results of the experiments of word segmentation and named entity recognition. The accuracies are as high as those on general domain texts indicating that we are ready to tackle various new problems related to the real world.",
+}
+
+@inproceedings{kameko2015learning,
+  author={Kameko, Hirotaka and Mori, Shinsuke and Tsuruoka, Yoshimasa},
+  booktitle={2015 IEEE Conference on Computational Intelligence and Games (CIG)}, 
+  title={Learning a game commentary generator with grounded move expressions}, 
+  year={2015},
+  volume={},
+  number={},
+  pages={177-184},
+  keywords={Games;Natural languages;Computers;Training;Grounding;Law},
+  doi={10.1109/CIG.2015.7317930}
+}
+
+@inproceedings{kameko2015symbol,
+    title = "Can Symbol Grounding Improve Low-Level {NLP}? Word Segmentation as a Case Study",
+    author = "Kameko, Hirotaka  and
+      Mori, Shinsuke  and
+      Tsuruoka, Yoshimasa",
+    editor = "M{\`a}rquez, Llu{\'\i}s  and
+      Callison-Burch, Chris  and
+      Su, Jian",
+    booktitle = "Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2015",
+    address = "Lisbon, Portugal",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D15-1277",
+    doi = "10.18653/v1/D15-1277",
+    pages = "2298--2303",
 }
 
 @misc{kajimura2024multimodal,
