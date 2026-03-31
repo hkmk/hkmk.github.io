@@ -67,3 +67,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+- name: Show assembled files
+  run: |
+    find _site -maxdepth 5 | sort
+    
