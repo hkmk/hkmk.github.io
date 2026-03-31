@@ -27,14 +27,14 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: react-app/package-lock.json
+          cache-dependency-path: app/kotenseki_annotation/package-lock.json
 
       - name: Install dependencies
-        working-directory: react-app
+        working-directory: app/kotenseki_annotation
         run: npm ci
 
       - name: Build React app
-        working-directory: react-app
+        working-directory: app/kotenseki_annotation
         run: npm run build
 
       - name: Assemble site
@@ -45,11 +45,11 @@ jobs:
           rsync -av \
             --exclude '.git' \
             --exclude '.github' \
-            --exclude 'react-app' \
+            --exclude 'app/kotenseki_annotation' \
             ./ _site/
 
           # Reactアプリのbuild結果を /app/kotenseki_annotation/ に配置
-          rsync -av react-app/dist/ _site/demo/app/kotenseki_annotation/
+          rsync -av app/kotenseki_annotation/dist/ _site/demo/app/kotenseki_annotation/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
