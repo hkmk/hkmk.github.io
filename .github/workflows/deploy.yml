@@ -39,7 +39,7 @@ jobs:
 
       - name: Assemble site
         run: |
-          mkdir -p _site/demo/app
+          mkdir -p _site/app/kotenseki_annotation
 
           # 既存のルート静的サイトをコピー
           rsync -av \
@@ -49,7 +49,7 @@ jobs:
             ./ _site/
 
           # Reactアプリのbuild結果を /app/kotenseki_annotation/ に配置
-          rsync -av app/kotenseki_annotation/dist/ _site/demo/app/kotenseki_annotation/
+          rsync -av app/kotenseki_annotation/dist/ _site/app/kotenseki_annotation/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
