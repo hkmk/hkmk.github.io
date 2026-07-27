@@ -173,12 +173,22 @@
    month	 = nov,
 }
 
-@inproceedings{kurokawa2026analysis,
-    title = {Analysis of Reasoning-Intensive Retrieval in Japanese},
-    author = {Kurokawa, Hiroki and Kameko, Hirotaka and Mori, Shinsuke},
-    booktitle = {Proceedings of The 2026 ACM Conference on Innovative Concepts and Theories in Information Retrieval (ACM ICTIR 2026)},
-    month = jul,
-    year = {2026 (TBA)},
+@inproceedings{10.1145/3805713.3820433,
+  author = {Kurokawa, Hiroki and Kameko, Hirotaka and Mori, Shinsuke},
+  title = {Analysis of Reasoning-Intensive Retrieval in Japanese},
+  year = {2026},
+  isbn = {9798400726002},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3805713.3820433},
+  doi = {10.1145/3805713.3820433},
+  abstract = {Reasoning-intensive retrieval has become increasingly important for Retrieval-Augmented Generation (RAG), where systems must retrieve evidence that supports an answer rather than rely on surface matching alone. However, existing benchmarks mainly focus on English and leave Japanese retrieval underexplored. We introduce JaReIR, a Japanese benchmark built from Yahoo! Chiebukuro question-answer pairs and Japanese Wikipedia passages with crowdsourced relevance and answerability judgments. JaReIR contains 153 queries split into Easy queries, which have at least one Direct answer passage, and Hard queries, whose positive passages all require reasoning. We benchmark sparse and dense retrievers on JaReIR and analyze the effects of query expansion and reranking. Performance generally drops from Easy to Hard across retrieval settings, which shows that Japanese reasoning-intensive retrieval remains challenging. Passage-level analyses and retrieved-title dispersion statistics show that Hard queries yield more ambiguous top-ranked results. Document-level retrieval reduces, but does not eliminate, the Easy-Hard gap, suggesting that passage localization explains part of the difficulty. Evaluating a translated Japanese version of an existing English benchmark under the same passage-level setup further suggests that translation noise and linguistic differences contribute to lower performance.},
+  booktitle = {Proceedings of the 2026 International ACM SIGIR Conference on Innovative Concepts and Theories in Information Retrieval (ICTIR)},
+  pages = {187–198},
+  numpages = {12},
+  keywords = {reasoning-intensive information retrieval, retrieval-augmented generation, crowdsourcing, japanese},
+  location = {Australia},
+  series = {ICTIR '26}
 }
 
 @inproceedings{shirai-etal-2026-jfc,
